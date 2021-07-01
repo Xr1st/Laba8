@@ -4,7 +4,7 @@ using namespace std;
 void one() {
 
 	int n;
-	cout << "Ââîä ÷èñëà: ";
+	cout << "Ð’Ð²Ð¾Ð´ Ñ‡Ð¸ÑÐ»Ð°: ";
 	cin >> n;
 
 	cout << n / 10000 << endl;
@@ -18,10 +18,10 @@ void one() {
 
 void two() {
 	char symbol;
-	cout << "Ââîä áóêâû: ";
+	cout << "Ð’Ð²Ð¾Ð´ Ð±ÑƒÐºÐ²Ñ‹: ";
 	cin >> symbol;
 	symbol = toupper(symbol);
-	cout << "Ðåçóëüòàò: " << symbol << endl;
+	cout << "Ð ÐµÐ·ÑƒÐ»ÑŒÑ‚Ð°Ñ‚: " << symbol << endl;
 
 }
 
@@ -35,16 +35,16 @@ double srednee(int *arr, int size)
 }
 
 void three() {
-	cout << "Çàïîëèíèòå ðàçìåð ìàññèâà: ";
+	cout << "Ð—Ð°Ð¿Ð¾Ð»Ð¸Ð½Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 	int size;
 	cin >> size;
 
 	int* arr = new int[size];
-	cout << "Çàïîëíèòå ìàññèâ: ";
+	cout << "Ð—Ð°Ð¿Ð¾Ð»Ð½Ð¸Ñ‚Ðµ Ð¼Ð°ÑÑÐ¸Ð²: ";
 	for (int i = 0; i < size; i++)
 		cin >> arr[i];
 
-	cout << "Ñðåäíåå àðèôìåòè÷åñêîå ìàññèâà: " << srednee(arr,size) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ Ð¼Ð°ÑÑÐ¸Ð²Ð°: " << srednee(arr,size) << endl;
 }
 
 int main() {
